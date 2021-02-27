@@ -1,0 +1,60 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>{% block title %}{% endblock %}</title>
+
+  <!-- Socket -->
+  <script src="../static/dist/js/socket.io.min.js"></script>
+
+
+  <!-- jQuery -->
+  <script src="../static/dist/js/jquery-3.4.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="../static/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- D3 package -->
+  <script src="../static/dist/js/d3.v5.min.js"></script>
+  <script src="../static/dist/js/d3-scale-chromatic.v1.min.js"></script>
+
+  <!-- TypeAhead -->
+  <script src="../static/dist/js/typeahead.bundle.js"></script>
+
+  <!-- Bokeh CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.css" type="text/css"> -->
+
+  <!-- Bokeh scripts -->
+  <!-- <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-1.4.0.min.js"></script> -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+
+  <style>
+    p,
+    .txt {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    {% block body %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>
